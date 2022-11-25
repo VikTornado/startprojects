@@ -1,0 +1,20 @@
+.header {
+    padding:10px;
+    background-color: darkgrey;
+}
+.logo{
+    width: 55px;
+}
+.link{
+    display: block;
+    margin-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.active{
+    font-size: 24px;
+}
+.item{
+    color: #66ccff;
+}
