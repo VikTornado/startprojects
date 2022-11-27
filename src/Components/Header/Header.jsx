@@ -15,11 +15,12 @@ class Header extends Component {
                         <Image className={header.logo} src={Logo} alt={"logo"}/>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-                    {/*<Navbar.Toggle aria-controls={"responsive-navbar-nav"}/>*/}
                     <NavbarCollapse id={"responsive-navbar-nav"}>
                         <div className={"mr-auto"}>
                             <NavLink to={"/home"}
                                      className={navData => navData.isActive ? header.active : header.item}>Home</NavLink>
+                            <NavLink to={"/slider"}
+                                     className={navData => navData.isActive ? header.active : header.item}>Slider</NavLink>
                             <NavLink to={"/contacts"}
                                      className={navData => navData.isActive ? header.active : header.item}>Contacts</NavLink>
                             <NavLink to={"/about"}
@@ -38,7 +39,6 @@ class Header extends Component {
                             </div>
                         </div>
                     </NavbarCollapse>
-                    {/*</div>*/}
                 </Container>
             </Navbar>
         );

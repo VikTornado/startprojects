@@ -6,15 +6,18 @@ import Home from "./Components/Home/Home";
 import Contacts from "./Components/Contacts/Contacts";
 import About from "./Components/About/About";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Slider from "./Components/Slider/Slider";
 
 
 
-function App() {
+function App(props) {
+    // console.log(props)
     return (<BrowserRouter>
             <Header/>
             <Routes>
                 <Route path="/home" element={<Home/>}/>
                 <Route path="/contacts" element={<Contacts/>}/>
+                <Route path="/slider" element={<Slider img={props.img}/>}/>
                 <Route path="/about" element={<About/>}/>
             </Routes>
             <Footer/>
