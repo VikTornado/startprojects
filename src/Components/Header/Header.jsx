@@ -1,43 +1,44 @@
 import React, {Component} from 'react';
 import header from "./Header.module.css"
-import {Button, Container, Form, FormControl, Image, Nav, Navbar} from "react-bootstrap";
+import {Button, Container, Form, FormControl, Image} from "react-bootstrap";
 import Logo from "../Img/logo.svg"
 import NavbarCollapse from "react-bootstrap/NavbarCollapse";
 import {NavLink} from "react-router-dom";
+import Navbar from 'react-bootstrap/Navbar'
 
 class Header extends Component {
     render() {
         return (
             <Navbar className={header.header} collapseOnSelect="md" bg={"dark"} variant={"dark"}>
-                <Container >
-                    <div className={header.container}>
-                        <Navbar.Brand className={""}>
-                            <Image className={header.logo} src={Logo} alt={"logo"}/>
-                        </Navbar.Brand>
-                        <Navbar.Toggle aria-controls={"responsive-navbar-nav"}/>
-                        <NavbarCollapse id={"responsive-navbar-nav"}>
-                            <Nav className={"mr-auto"}>
-                                <NavLink to={"/home"}
-                                         className={navData => navData.isActive ? header.active : header.item}>Home</NavLink>
-                                <NavLink to={"/contacts"}
-                                         className={navData => navData.isActive ? header.active : header.item}>Contacts</NavLink>
-                                <NavLink to={"/about"}
-                                         className={navData => navData.isActive ? header.active : header.item}>About
-                                    us</NavLink>
-                            </Nav>
-                            <div>
-                                <Form>
-                                    <FormControl
-                                        placeholder={"Search"}
-                                        type={"text"}
-                                    />
-                                </Form>
-                                <div>
-                                    <Button>Push</Button>
-                                </div>
+                <Container>
+                    <Navbar.Brand href={"/"} className={""}>
+                        <Image className={header.logo} src={Logo} alt={"logo"}/>
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                    {/*<Navbar.Toggle aria-controls={"responsive-navbar-nav"}/>*/}
+                    <NavbarCollapse id={"responsive-navbar-nav"}>
+                        <div className={"mr-auto"}>
+                            <NavLink to={"/home"}
+                                     className={navData => navData.isActive ? header.active : header.item}>Home</NavLink>
+                            <NavLink to={"/contacts"}
+                                     className={navData => navData.isActive ? header.active : header.item}>Contacts</NavLink>
+                            <NavLink to={"/about"}
+                                     className={navData => navData.isActive ? header.active : header.item}>About
+                                us</NavLink>
+                        </div>
+                        <div className={header.form}>
+                            <Form >
+                                <FormControl
+                                    placeholder={"Search"}
+                                    type={"text"}
+                                />
+                            </Form>
+                            <div className={header.button}>
+                                <Button>Push</Button>
                             </div>
-                        </NavbarCollapse>
-                    </div>
+                        </div>
+                    </NavbarCollapse>
+                    {/*</div>*/}
                 </Container>
             </Navbar>
         );

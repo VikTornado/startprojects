@@ -7,6 +7,7 @@ class Home extends Component {
         return (
             <div className={home.home}>
                 <Container>
+
                     <p>home</p>
                 </Container>
             </div>
