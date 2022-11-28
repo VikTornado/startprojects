@@ -1,0 +1,11 @@
+.slider{
+    padding: 10px 10px 60px;
+}
+.title{
+    text-align: center;
+}
+.sliderBlock{
+    margin: 30px;
+    width: 700px;
+    box-shadow: 10px 5px 5px darkgrey;
+}
