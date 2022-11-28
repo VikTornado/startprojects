@@ -23,6 +23,8 @@ class Header extends Component {
                                      className={navData => navData.isActive ? header.active : header.item}>Slider</NavLink>
                             <NavLink to={"/contacts"}
                                      className={navData => navData.isActive ? header.active : header.item}>Contacts</NavLink>
+                            <NavLink to={"/cards"}
+                                     className={navData => navData.isActive ? header.active : header.item}>Cards</NavLink>
                             <NavLink to={"/about"}
                                      className={navData => navData.isActive ? header.active : header.item}>About
                                 us</NavLink>

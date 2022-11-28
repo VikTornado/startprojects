@@ -7,6 +7,7 @@ import Contacts from "./Components/Contacts/Contacts";
 import About from "./Components/About/About";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Slider from "./Components/Slider/Slider";
+import Cards from "./Components/Cards/Cards";
 
 
 
@@ -17,6 +18,7 @@ function App(props) {
             <Routes>
                 <Route path="/home" element={<Home/>}/>
                 <Route path="/contacts" element={<Contacts/>}/>
+                <Route path="/cards" element={<Cards/>}/>
                 <Route path="/slider" element={<Slider img={props.img}/>}/>
                 <Route path="/about" element={<About/>}/>
             </Routes>
