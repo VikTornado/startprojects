@@ -1,17 +1,21 @@
-import React, {Component} from 'react';
+import React from "react";
 import {Container} from "react-bootstrap";
-import about from "./About.module.css"
 
-class About extends Component {
-    render() {
-        return (
-            <div className={about.about}>
-                <Container>
-                    About us
-                </Container>
-            </div>
-        );
-    }
+const About = () => {
+    return (
+        <div>
+            <Container>
+                <div>
+                    <h3> Car Name: {"Car_name"}</h3>
+                    <span>Number: <strong>{Math.round(Math.random() * 100)}</strong></span>
+                </div>
+                <div>
+                    <h3> Car Name: {"Car_name"}</h3>
+                    <span>Number: <strong>{Math.round(Math.random() * 100)}</strong></span>
+                </div>
+            </Container>
+        </div>
+    )
 }
 
-export default About;
+export default About

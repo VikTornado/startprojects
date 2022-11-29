@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import img from "./Components/State";
+import state from "./Components/State";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App img={img.images} />
+    <App state={state.images} />
   </React.StrictMode>
 );
 
