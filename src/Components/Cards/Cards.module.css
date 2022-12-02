@@ -1,0 +1,20 @@
+.cards{
+    min-height: auto;
+}
+.title{
+    text-align: center;
+}
+.block{
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card{
+    margin: 20px;
+
+}
+.Container{
+    margin: auto;
+}

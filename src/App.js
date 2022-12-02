@@ -10,7 +10,7 @@ import Slider from "./Components/Slider/Slider";
 import Cards from "./Components/Cards/Cards";
 
 function App(props) {
-    console.log(props)
+    // console.log(props)
     return (<BrowserRouter>
             <Header/>
             <Routes>
@@ -18,7 +18,7 @@ function App(props) {
                 <Route path="/contacts" element={<Contacts/>}/>
                 <Route path="/cards" element={<Cards/>}/>
                 <Route path="/slider" element={<Slider img={props.state}/>}/>
-                <Route path="/about" element={<About/>}/>
+                <Route path="/about" element={<About car={props.state}/>}/>
             </Routes>
             <Footer/>
         </BrowserRouter>);

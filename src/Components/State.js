@@ -13,7 +13,26 @@ let state = {
         {text: "kjhlwkd wekfjbwe4"},
         {text: "kjhlwkd wekfjbwe5"},
         {text: "kjhlwkd wekfjbwe6"},
+    ],
+    car: [
+        {brand: "BMW"},
+        {brand: "audi"},
+        {brand: "lexus"},
+        {brand: "toyota"},
+        {brand: "renault"},
+        {brand: "peugeot"},
+        {brand: "seat"},
+    ],
+    year: [
+        {year: "2000"},
+        {year: "1999"},
+        {year: "1993"},
+        {year: "1949"},
+        {year: "1599"},
+        { year: "1699"},
+        {year: "1639"},
     ]
 }
 
-export default state
+
+export default state;

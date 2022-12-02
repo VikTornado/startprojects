@@ -1,17 +1,20 @@
 import React from "react";
 import {Container} from "react-bootstrap";
+import AboutSecond from "./AboutSecond/AboutSecond";
+import about from "./About.module.css"
 
-const About = () => {
+const About = (props) => {
+    console.log(props)
+    let newBrand = props.car.car.map(names => <AboutSecond brand={names.brand}/>
+    )
+    let newYear = props.car.year.map(names => <AboutSecond brand={names.year}/>)
     return (
         <div>
             <Container>
-                <div>
-                    <h3> Car Name: {"Car_name"}</h3>
-                    <span>Number: <strong>{Math.round(Math.random() * 100)}</strong></span>
-                </div>
-                <div>
-                    <h3> Car Name: {"Car_name"}</h3>
-                    <span>Number: <strong>{Math.round(Math.random() * 100)}</strong></span>
+                <h3 className={about.title}>Brand</h3>
+                <div className={about.brandBlock}>
+                    <div className={about.newBrand}>{newBrand}</div>
+                    <div className={about.newYear}>{newYear}</div>
                 </div>
             </Container>
         </div>
