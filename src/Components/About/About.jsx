@@ -1,20 +1,29 @@
 import React from "react";
-import {Container} from "react-bootstrap";
-import AboutSecond from "./AboutSecond/AboutSecond";
+import {Button, Container} from "react-bootstrap";
 import about from "./About.module.css"
 
 const About = (props) => {
-    console.log(props)
-    let newBrand = props.car.car.map(names => <AboutSecond brand={names.brand}/>
-    )
-    let newYear = props.car.year.map(names => <AboutSecond brand={names.year}/>)
+    let newBrand = props.car.car.map(brandDate => <div className={about.item}>{brandDate.brand}</div>)
+    let newYear = props.car.year.map(yearDate => <div className={about.item}>{yearDate.year}</div>)
     return (
         <div>
             <Container>
                 <h3 className={about.title}>Brand</h3>
                 <div className={about.brandBlock}>
-                    <div className={about.newBrand}>{newBrand}</div>
-                    <div className={about.newYear}>{newYear}</div>
+                    <div className={about.items}>
+                        {newBrand}
+                    </div>
+                    <div className={about.items}>
+                        {newYear}
+                    </div>
+                </div>
+                <div>
+                    <div className="form-group">
+                        <label htmlFor="exampleFormControlTextarea1">Example textarea</label>
+                        <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <Button onClick={"btnLink"} id={"btn"} type="submit" className="btn btn-primary mb-2 ">Confirm
+                        identity</Button>
                 </div>
             </Container>
         </div>

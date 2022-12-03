@@ -30,7 +30,7 @@ class Header extends Component {
                                 us</NavLink>
                         </div>
                         <div className={header.form}>
-                            <Form >
+                            <Form>
                                 <FormControl
                                     placeholder={"Search"}
                                     type={"text"}
