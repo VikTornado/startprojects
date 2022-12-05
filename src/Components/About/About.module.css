@@ -33,3 +33,10 @@
     border: 1px solid #66ccff;
     text-align: center;
 }
+.formGroup{
+    margin: auto;
+    width: 500px;
+}
+.formBlock{
+    display: block;
+}

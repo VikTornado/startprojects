@@ -31,7 +31,8 @@ let state = {
         {year: "1599"},
         { year: "1699"},
         {year: "1639"},
-    ]
+    ],
+    title: "Hello"
 }
 
 
