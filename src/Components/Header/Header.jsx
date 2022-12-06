@@ -22,7 +22,7 @@ class Header extends Component {
         variant={"dark"}
       >
         <Container>
-          <Navbar.Brand href={"/"} className={""}>
+          <Navbar.Brand href={"/home"} className={""}>
             <Image className={header.logo} src={Logo} alt={"logo"} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
