@@ -1,5 +1,4 @@
 .header {
-    padding:100px;
     background-color: darkgrey;
 }
 .Container{
@@ -34,4 +33,7 @@
 }
 .button{
     margin-left: 10px;
+}
+.collapse{
+    justify-content: space-around;
 }
