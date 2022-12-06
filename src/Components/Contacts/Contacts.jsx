@@ -63,11 +63,9 @@ class Contacts extends Component {
                       src="https://img.freepik.com/premium-photo/html5-in-editor-for-website-development-website-html-code-on-the-laptop-display-closeup-photo-modern-tech-innovative-startup-project_372999-618.jpg"
                     />
                     <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Nesciunt harum itaque fugiat quisquam praesentium
-                      exercitationem consequuntur, alias sunt beatae repellendus
-                      aut illum reiciendis ipsa dicta provident quas unde nam
-                      rem.
+                      Lorem ipsum dolor, praesentium exercitationem
+                      consequuntur, alias sunt beatae repellendus aut illum
+                      reiciendis ipsa dicta provident quas unde nam rem.
                     </p>
                   </TabPane>
                   <TabPane eventKey={"third"}>
@@ -86,7 +84,6 @@ class Contacts extends Component {
                   </TabPane>
                   <TabPane eventKey={"fourth"}>
                     <Slider />
-
                     <p>
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Nesciunt harum itaque fugiat quisquam praesentium
