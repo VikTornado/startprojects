@@ -79,6 +79,10 @@ class Contacts extends Component {
                       Nesciunt harum itaque fugiat quisquam praesentium
                       exercitationem consequuntur, alias sunt beatae repellendus
                       aut illum reiciendis ipsa dicta provident quas unde nam
+                      rem. Lorem ipsum dolor, sit amet consectetur adipisicing
+                      elit. Nesciunt harum itaque fugiat quisquam praesentium
+                      exercitationem consequuntur, alias sunt beatae repellendus
+                      aut illum reiciendis ipsa dicta provident quas unde nam
                       rem.
                     </p>
                   </TabPane>
