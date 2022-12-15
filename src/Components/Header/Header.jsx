@@ -71,6 +71,14 @@ class Header extends Component {
               >
                 About us
               </NavLink>
+              <NavLink
+                to={"/mui"}
+                className={(navData) =>
+                  navData.isActive ? header.active : header.item
+                }
+              >
+                Mui
+              </NavLink>
             </Nav>
             <Form>
               <FormControl placeholder={"Search"} type={"text"} />
