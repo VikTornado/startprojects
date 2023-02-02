@@ -3,9 +3,21 @@
 }
 .title{
     text-align: center;
+    color: #0c4128;
 }
 .sliderBlock{
     margin: 30px;
     width: 700px;
     box-shadow: 10px 5px 5px darkgrey;
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        background-color: #0c4128;
+    }
+    .sliderBlock{
+       width: auto;
+        box-shadow: 10px 5px 5px darkgrey;
+        background-color: #0c4128;
+    }
 }

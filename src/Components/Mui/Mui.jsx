@@ -1,25 +1,12 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import Stack from "@mui/material/Stack";
-import Button from "@mui/material/Button";
+import {Container} from "@mui/material";
 
-const Mui = () => {
+const CountDown = () => {
   return (
-    <Container>
-      <h1>Mui</h1>
-      <Stack spacing={2} direction="row">
-        <Button variant="text">Text</Button>
-        <Button variant="contained">Contained</Button>
-        <Button variant="outlined">Outlined</Button>
-      </Stack>
+    <Container sx={{my: 4, textAlign: 'center'}}>
+      <h1>CountDown</h1>
     </Container>
   );
 };
 
-export default Mui;
-
-// export default function BasicButtons() {
-//   return (
-
-//   );
-// }
+export default CountDown;

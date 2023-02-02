@@ -37,6 +37,7 @@ let state = {
     { brand: "renault" },
     { brand: "peugeot" },
     { brand: "seat" },
+    { brand: "seat1" },
   ],
   year: [
     { year: "2000" },
@@ -46,6 +47,7 @@ let state = {
     { year: "1599" },
     { year: "1699" },
     { year: "1639" },
+    { year: "1639екака" },
   ],
   title: "Hello",
 };
